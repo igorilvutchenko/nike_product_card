@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../fonts/museosans100-webfont.woff2') format('woff2'),
+         url('../fonts/museosans100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	/*background-image: url('../nikeproductcarddark.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;*/
+}
+
+body {
+	background-color: #c5c5c8;
+	background-image:url('../img/bg_dots_gold.png'), url('../img/bg_dots_gray.png'), url('../img/bg_lines.png');
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: center, center, center;
+	background-size: cover, 100%;
+	height: 100%;
+}
+
+.card {
+	width: 690px;
+	height: 390px;
+	border-radius: 10px;
+	background:  #111a28;
+	margin: 130px auto;
+	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	font-size: 0;
+	padding: 25px;
+}
+
+.card__image,
+.card__descr {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	height: 100%;
+}
+
+.card__image {
+	width: 58%;
+}
+
+.card__descr {
+	width: 42%;
+	padding:50px;
+}
+
+
+.card__logo {
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	height: 40px;
+	margin: 0;
+}
+
+.card__photo {
+	width: 100%;
+	height: 255px;
+}
+
+.card__photo img { /*Не нравится такое решение*/
+	margin-top: 70px;
+
+}
+
+.nav__dots {
+	margin: 35px 0 0 0;
+	text-align: center;
+	padding: 0;
+}
+
+.nav__dots li {
+	display: inline-block;
+}
+
+.nav__dot {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+}
+
+.nav__dot {
+	margin-left:8px; /*не хочет работать в конструкции :not(:last-of-type);*/
+}
+
+.nav__dot:hover {
+	/*background-size: 100%;*/
+	-webkit-transform: scale(1.5, 1.5);
+	   -moz-transform: scale(1.5, 1.5);
+	    -ms-transform: scale(1.5, 1.5);
+	     -o-transform: scale(1.5, 1.5);
+	        transform: scale(1.5, 1.5);
+	 border: 2px solid #c5c5c8;
+}
+
+.nav__dot--gray {
+	background:#29344F;
+}
+.nav__dot--white {
+	background:#ffffff;
+}
+.nav__dot--red {
+	background:#F24B41;
+}
+.nav__dot--blue {
+	background:#23E6ED;
+}
+
+.card__header {
+	font-family: 'museo_sans100';
+	font-size: 24px;
+	font-weight: 100;
+	color:  #e1e1e1;
+	text-align: left;
+	margin: 0;
+}
+
+.card__text {
+	font-family: 'museo_sans100';
+	width: 180px;
+	height: 15px;
+	font-weight: 100;
+	font-size: 14px;
+	color:  #e1e1e1;
+	text-align: left;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.card__rate {
+	font-size: 12px;
+	margin-top: 25px;
+}
+
+.card__stars {
+	display: inline-block;
+	padding-left: 0;
+	margin: 0;
+}
+
+.card__star {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-size: contain;
+}
+
+.card__star--gray {
+	background: url(../img/star.svg) no-repeat center;
+
+}
+
+.card__star--gold {
+	background: url(../img/star-gold.svg) no-repeat center;
+}
+
+.card__select {
+	margin-top: 25px;
+}
+
+.select__size,
+.select__qty {
+	display: inline-block;
+	padding-left: 10px;
+	font-family: 'museo_sans100';
+	background-color: transparent;
+	color: #e1e1e1;
+	border: 1px solid #e1e1e1;
+	font-size: 16px;
+	text-align: left;
+	line-height: 35px;
+	background-image: url('../img/down-arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 14px;
+	width: 70px;
+	height: 35px;
+	background-position: 55px, 6px;
+}
+
+.button__add {
+	margin-top: 30px;
+	display: inline-block;
+	width: 185px;
+	height: 40px;
+	font-family: 'museo_sans100';
+	background-color: #202835;
+	color: #e1e1e1;
+	border: 1px solid #e1e1e1;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.select__size,
+.select__qty,
+.button__add {
+	outline: none;
+}
